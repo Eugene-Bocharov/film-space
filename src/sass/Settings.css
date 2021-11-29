@@ -13,6 +13,7 @@ button{
     border-radius: 15px;
     width: 55px;
     height: 55px;
+    margin-bottom: -55px;
     outline: none;
     border: none;
 }
@@ -20,20 +21,19 @@ button{
 .logo{
     border-radius: 100%;
     width: 10vw;
-    margin-left: 50vw;
+    margin-left: 38vw;
     display: flex;
     align-self: end;
-    margin-bottom: -10vh;
+    margin-bottom: 0vh;
 }
 
 #container{
-    margin: 15vh 16.5vw 10vh 16.5vw;
+    margin: 15vh 25vw 10vh 25vw;
 
 }
 
 #input-container{
     margin-top: 10vh;
-    margin-left: 5vw;
 }
 
 .input-div{
