@@ -1,7 +1,15 @@
-<h5>{{original_title}}</h5>
+{{#each this}}
 
-{{#each genres}}
-  <li>{{this.name}}</li>
+{{!-- <img class='poster_img' src='https://image.tmdb.org/t/p/w300{{poster_path}}' alt='' /> --}}
+
+  <div class='poster_hover_block'>
+    <h5>{{original_title}}</h5>
+
+    {{#each genres}}
+      <li>{{this.name}}</li>
+    {{/each}}
+
+    <p>{{overview}}</p>
+  </div>
+
 {{/each}}
-
-<img class="poster_img" src="{{poster_path}}" alt="">
