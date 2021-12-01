@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600&family=Ropa+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  body {
+    background: linear-gradient(127.11deg, #292725 66.28%, #cd2912 155.28%, #e9290f 170.6%);
+    background-attachment: fixed;
+  }
+  
+  .nav_menu_element {
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 29px;
+    color: #555555;
+  
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .nav_menu_element:hover {
+  cursor: pointer;   
+   background: linear-gradient(163.13deg, #E9290F 2.75%, #DB802C 116.87%)  ;
+          -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: table;
+    
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  
+  .header_positioning_container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header {
+    width: 100%;
+    margin-top: -105px;
+    display: flex;
+    position: fixed;
+    vertical-align: middle;
+  
+    justify-content: center;
+  }
+  
+  .user_icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .logo {
+    width: 115px;
+    height: 75px;
+  }
+  
+  .main {
+    margin-top: 151px;
+  }
+
+  
+.filler {
+    border-radius: 15px;
+  
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(
+      153.68deg,
+      rgba(164, 0, 20, 0.85) 33.69%,
+      rgba(100, 12, 0, 0.85) 61.39%
+    );
+    box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+  }
+
+  

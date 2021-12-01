@@ -1,290 +1,219 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600&family=Ropa+Sans&display=swap');
 
- *{
-     margin: 0;
-     padding: 0;
- }
 
- ul{
-     list-style: none;
- }
 
-body{
-    background-image:url(../images/bg.svg) ;
-/* overflow-y: hidden; */
-background-size: cover;
-
+.new_ones_heading {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.25em;
+  color: #ffffff;
+  margin-left: 10%;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
 }
 
-.nav_menu_element{
-    font-family: 'Exo 2', sans-serif;
-    font-style: normal;
-font-weight: normal;
-font-size: 31px;
-line-height: 29px;
-color:#555555;
+.start_watching {
+  margin-top: 50px;
+  width: 272px;
+  height: 62px;
 
+  background: linear-gradient(93.48deg, #e9290f 8.43%, #ff6107 74.59%);
+  border-radius: 15px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fffefe;
 }
 
-.header_positioning_container{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
+.new_film {
+  width: 115px;
+  height: 170px;
+  border-radius: 20px;
+  position: relative;
 }
 
-.header{
-    width: 100%;
-    margin-top: -105px;
-    display: flex;
-    position: fixed;
-    vertical-align: middle;
+.film_image {
+  border-radius: 20px;
 
-    justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.user_icon{
-    width: 50px;
-    height: 50px;
+.dimmer {
+  border-radius: 20px;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(3, 3, 3, 0.8) 85.42%);
 }
 
-.nav_menu{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-}
-.logo{
-    width: 115px;
-    height: 75px;
-}
+.film_name {
+  left: 30px;
+  right: 30px;
+  top: 130px;
+  position: absolute;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.25em;
 
-.main{
-    margin-top: 151px;
-}
-
-.new_ones_heading{
- 
-
-font-family: 'Exo 2', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.25em;
-color:  #FFFFFF ;
-margin-left: 10%;
-margin-bottom: 30px;
+  color: #fff9f9;
 }
 
-.start_watching{
-    margin-top: 50px;
-    width: 272px;
-height: 62px;
-
-background: linear-gradient(93.48deg, #E9290F 8.43%, #FF6107 74.59%);
-border-radius: 15px;
-font-family: 'Exo 2', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.1em;
-border:none;
-display: flex;
-justify-content: center;
-align-items: center;
-
-color: #FFFEFE;
+.top_film {
+  width: 175px;
+  height: 255px;
+  border-radius: 15px;
+  position: relative;
 }
 
-.new_film{
-width: 115px;
-height: 170px;
-border-radius: 20px;
-position: relative;
-}
+.top_film_image {
+  border-radius: 15px;
 
-.film_image{
-    border-radius: 20px;
-
-    width: 100%;
-    height: 100%;
-}
-
-.dimmer{
-    border-radius: 20px;
-
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(3, 3, 3, 0.8) 85.42%);
-}
-
-.film_name{
-    left: 30px;
-    right: 30px;
-    top: 130px;
-    position: absolute;
-    font-family: 'Exo 2', sans-serif;
-    font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 22px;
-letter-spacing: 0.25em;
-
-color: #FFF9F9;
-}
-
-.top_film{
-width: 175px;
-height: 255px;
-border-radius: 15px;
-position: relative;
-}
-
-.top_film_image{
-    border-radius: 15px;
-
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 
-.filler{
-    border-radius: 15px;
-
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(153.68deg, rgba(164, 0, 20, 0.85) 33.69%, rgba(100, 12, 0, 0.85) 61.39%);
-box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+.top_film:hover .filler {
+  display: block;
 }
 
+.top_film_quality {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
 
-.top_film:hover .filler{
-    display: block;
-
+  color: #fffbfb;
 }
 
-.top_film_quality{
-    position: absolute;
-    top: 5px;
-    right: 8px;
-    font-family: 'Exo 2', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 22px;
+.top_film_name {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 
-color: #FFFBFB;
+  color: #ffffff;
 }
 
-.top_film_name{
-    position: absolute;
-    top: 30px;
-    left: 12px;
-    font-family: 'Exo 2', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
+.top_film_parameter {
+  margin-top: 15px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
 
-color: #FFFFFF;
+  color: #fffcfc;
 }
 
-.top_film_parameter{
-    margin-top: 15px;
-    font-family: 'Exo 2', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 13px;
-line-height: 16px;
-
-color: #FFFCFC;
+.about_top_film {
+  position: absolute;
+  top: 75px;
+  left: 15px;
 }
 
-.about_top_film{
-    position: absolute;
-    top: 75px;
-    left: 15px;
+.favorite {
+  position: absolute;
+  bottom: 11px;
+  left: 15px;
+  width: 18px;
+  height: 16px;
 }
 
-.favorite{
-    position: absolute;
-    bottom: 11px;
-    left: 15px;
-    width: 18px;
-    height: 16px;
+.rating_text {
+  float: right;
+  font-family: 'Ropa Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #ffffff;
 }
 
-.rating_text{
-    float: right;
-    font-family: 'Ropa Sans', sans-serif;
-    font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 21px;
-/* identical to box height */
-
-
-color: #FFFFFF;
+.rating {
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
 }
 
-.rating{
-    position: absolute;
-    bottom: 8px;
-    right: 5px;
+.star {
+  width: 20px;
+  height: 19px;
 }
 
-.star{
-    width: 20px;
-    height: 19px;
+.new_ones_heading {
 }
 
-.new_ones_heading{
-
+.top_films_heading {
+  margin-top: 25px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
+    margin-left: 10%;
+  margin-bottom: 50px;
 }
 
-.top_films_heading{
-    margin-top: 25px;
-    font-family: 'Exo 2', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 43px;
-letter-spacing: 0.25em;
-color:#fff;
-margin-left: 10%;
-margin-bottom: 50px;
+.justify_container {
+  display: flex;
+  justify-content: center;
 }
 
-.justify_container{
-    display: flex;
-    justify-content: center;
+.new_ones {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.new_ones{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
+.new_ones_films {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.new_ones_films{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.top_films{
-    width: 80%;
-    display: grid; 
-    grid-template-columns: repeat(5, 2fr);
+.top_films {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
 }
