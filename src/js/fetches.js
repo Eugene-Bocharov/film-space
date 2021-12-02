@@ -63,12 +63,3 @@ const test = filterCurrentGenres();
 
 console.log("test : ", test);
 
-
-setTimeout(() => {
-
-  const items_el_list = {
-    img: document.querySelectorAll('.poster_img'),
-    hover_box: document.querySelectorAll('.poster_hover_block'),
-  }
-       console.log(items_el_list)
-}, 2000);
