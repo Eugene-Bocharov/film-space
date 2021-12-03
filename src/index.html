@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <!-- делал HTML под дизайн Олександры -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/matual.css" />
     <link rel="stylesheet" href="./css/film.css" />
-    <link rel="stylesheet" href="./css/sin_f.css" />
+
+    <title>Film Space</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -14,7 +17,37 @@
     />
   </head>
   <body class="body">
+    <header class="header">
+      <div class="header_positioning_container">
+        <img src="./images/logo.png" alt="logotype" class="logo" />
+        <ul class="menu">
+          <li class="menu_item selected"><a href="#" class="menu_item_link">Home</a></li>
+          <li class="menu_item"><a href="#" class="menu_item_link">Search</a></li>
+          <li class="menu_item"><a href="./favorite.html" class="menu_item_link">My List</a></li>
+          <li class="menu_item"><a href="#" class="menu_item_link">About Us</a></li>
+        </ul>
+        <img src="./images/user_icon_place.png" alt="user icon" class="user_icon" />
+      </div>
+    </header>
+    <main class="main">
+      <h2 class="new_ones_heading">NOW PLAYING</h2>
+
+      <ul class="now_playing_list"></ul>
+
+      <h2 class="new_ones_heading">TOP RATED</h2>
+
+      <ul class="top_rated_list"></ul>
+
+      <h2 class="new_ones_heading">POPULAR</h2>
+
+      <ul class="popular_list"></ul>
+
+      <h2 class="new_ones_heading">UPCOMMING</h2>
+
+      <ul class="upcomming_list"></ul>
+
+    </main>
     <script src="./index.js"></script>
-    <script src="./js/fetches.js"></script>
+    <script src="./js/main_p.js"></script>
   </body>
 </html>
