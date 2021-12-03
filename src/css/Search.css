@@ -1,207 +1,42 @@
-/* 
-font-family: 'Exo 2', regular;
-*/
+input{
+  outline: none;
+  background-color: #292725;
+  border-radius: 20px;
+  color: #555555;
+  border: none;
+  padding: 0.8em;
+  font-size: 20px;
+  margin: 1em;
+  font-style: 'Exo 2', sans-serif;
+  
+}
 
-* {
-    transition-duration: 300ms;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* html, */
-  body {
-    /* height: 100%; */
-    position: relative;
-    width: 100%;
-    background: linear-gradient(130deg, #292725, #292725, #cd2912) no-repeat;
-  }
-  
-  /* body {
-    background: linear-gradient(130deg, #292725, #292725, #cd2912) no-repeat;
-  } */
-  
-  ul {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #555555;
-  }
-  
-  .conteiner {
-    margin: 0 auto;
-    padding: 0 70px;
-  }
-  
-  .header {
-    padding-top: 40px;
-  }
-  
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .menu {
-    display: flex;
-    align-items: center;
-  }
-  
-  .menu-item {
-    /* width: 300px; */
-    margin-left: 114px;
-    height: 27px;
-    font-family: 'Exo 2';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-  }
-  
-  .menu-item__link:hover {
-    background: linear-gradient(45deg, #e9290f, #db802c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: table;
-  }
-  
-  .rectangle {
-    width: 1058px;
-    height: 142px;
-  
-    background: #232220;
-    border-radius: 20px;
-    margin-top: 80px;
-    margin-left: 450px;
-  }
-  
-  .avatar-ellipse {
-  }
-  
-  .littles-forms {
-    display: flex;
-  }
-  
-  .btn1 {
-    margin-left: 495px;
-    margin-top: 50px;
-    width: 125px;
-    height: 51px;
-  
-    background: #292725;
-    border-radius: 20px;
-  }
-  
-  .btn {
-    font-family: 'Exo 2';
-  }
-  
-  .btn-text {
-    padding: 10px;
-    padding-left: 15px;
-    font-family: 'Exo 2';
-    position: absolute;
-    width: 42px;
-    height: 13px;
-  
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-  
-    color: #555555;
-  }
-  
-  .dropdown {
-    position: absolute;
-    display: inline-block;
-    margin-top: 60px;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .btn:hover,
-  .dropdown:hover .btn {
-    background-color: #0b7dda;
-  }
-  
-  .main-forms {
-    display: flex;
-  }
-  
-  input {
-    position: absolute;
-    width: 375px;
-    height: 51px;
-  
-    background: #292725;
-    border-radius: 20px;
-  
-    margin-top: 50px;
-    margin-left: 65px;
-    border: none;
-    padding: 18px;
-    font-family: 'Exo 2';
-    color: white;
-  }
-  
-  .newFilms {
-    margin-top: 25px;
-    margin-left: 70px;
-  
-    width: 485px;
-    height: 58px;
-  
-    font-family: 'Exo 2';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 43px;
-  
-    background: linear-gradient(#ffffff, #474747);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: table;
-  }
-  
-  .popularMovies {
-    margin-top: 0px;
-    margin-left: 70px;
-  
-    width: 485px;
-    height: 58px;
-  
-    font-family: 'Exo 2';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 43px;
-  
-    background: linear-gradient(#ffffff, #474747);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: table;
-  }
+p{
+  font-style: 'Exo 2', sans-serif;
+  font-size: 20px;
+  color: #555555;
+}
+
+.search-box{
+  background-color: #232220;
+  border-radius: 20px;
+  margin-top: 25vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 80vw;
+  height: 17vh;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
+
+#search{
+  margin-left: 5vw;
+  width: 33vw;
+  padding-left: 1.5vw;
+}
+#year{
+  width: 5vw;
+  text-align: center;
+}
