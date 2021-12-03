@@ -59,8 +59,8 @@ const filterCurrentGenres = async (current_option, current_index) => {
   const genres = await getGenres();
   const now = await current_option();
 
-  console.log('genres2 : ', genres);
-  console.log('now : ', now);
+  // console.log('genres2 : ', genres);
+  // console.log('now : ', now);
 
   const result = now.map(film => {
     // console.log(film.genre_ids);//[]
@@ -79,7 +79,7 @@ const filterCurrentGenres = async (current_option, current_index) => {
     return { ...film, genresNames: [...currentGenres] };
   });
 
-  console.log('result : ', result);
+  // console.log('result : ', result);
 
 const names_list = [document.querySelector('.now_playing_list'), document.querySelector('.top_rated_list'), document.querySelector('.popular_list'), document.querySelector('.upcomming_list')]
   renderCurrent(result, names_list[current_index]);
