@@ -1,4 +1,4 @@
-input{
+.input{
   outline: none;
   background-color: #292725;
   border-radius: 20px;
@@ -10,8 +10,20 @@ input{
   font-style: 'Exo 2', sans-serif;
   
 }
+.header{
+  z-index: 1;
+  background-color: rgba(41, 39, 37, 0.925);
+}
 
-p{
+.film-category{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  margin-right: auto;
+}
+
+.p{
   font-style: 'Exo 2', sans-serif;
   font-size: 20px;
   color: #555555;
@@ -20,7 +32,7 @@ p{
 .search-box{
   background-color: #232220;
   border-radius: 20px;
-  margin-top: 25vh;
+  margin-top: 20vh;
   margin-left: 10vw;
   margin-right: 10vw;
   width: 80vw;
@@ -33,10 +45,85 @@ p{
 
 #search{
   margin-left: 5vw;
-  width: 33vw;
+  width: 37vw;
   padding-left: 1.5vw;
 }
 #year{
-  width: 5vw;
+  width: 7vw;
   text-align: center;
 }
+
+#sort-by-box{
+  display: flex;
+  align-items: center;
+  margin-left: 3vw;
+}
+
+
+
+.film-container{
+  margin-top: 40vh;
+  position: absolute;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.category-name{
+  font-size: 3em;
+  margin-top: 5vh;
+  font-family: 'Exo 2', sans-serif;
+  font-style: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+ 
+}
+
+.search-img{
+  margin-left: 5vw;
+}
+/* ---------------------------------Droping list start--------------------------------------------- */
+
+
+.droping-list-but{
+  color: #555555;
+  border-radius: 10px;
+  width: 7vw;
+  height: 5vh;
+  background-color:#292725;
+  border-style: none;
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  margin-left: 1vw;
+}
+
+#droping-list-year{
+  display: none;
+}
+
+#droping-list-rating{
+  display: block;
+}
+
+#droping-list-length{
+  display: none;
+}
+
+.droping-list-but:hover{
+
+  background: linear-gradient(131.6deg, #E9290F 14.14%, #DB802C 108.58%);
+}
+
+.droping-list-element li:hover #droping-list-length{
+  display: block;
+}
+.droping-list-element li:hover #droping-list-year{
+  display: block;
+}
+.droping-list-element li:hover #droping-list-rating{
+  display: block;
+}
+
+/* У меня почему то не получилось сделать так что бы оно работало.  */
+/* ---------------------------------Droping list end--------------------------------------------- */

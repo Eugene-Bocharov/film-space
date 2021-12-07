@@ -1,0 +1,23 @@
+
+{{#each this}}
+
+  <div class='poster_card'>
+    <img class='poster_img' src='https://image.tmdb.org/t/p/w300{{poster_path}}' alt='' />
+
+    <div class='poster_hover_block'>
+      <h5 class='poster_title'>{{original_title}}</h5>
+      <div class='poster_p_container'>
+        <h5 class='poster_genres'>Genres: </h5>
+        {{#each genresNames}} <h5 class='poster_genres'> {{this}} </h5>{{/each}}
+      </div>
+
+      <h5 class='poster_year'>Year: {{release_date}}</h5>
+      <h5 class='poster_vote'>Rating: {{vote_average}}</h5>
+
+      <button class='poster_like_button'>
+        <img src='../images/favorite.png' alt='' class='poster_like_button_img' />
+      </button>
+    </div>
+  </div>
+
+{{/each}}

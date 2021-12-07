@@ -7,7 +7,7 @@
     <title>FilmSpace | Search</title>
     <link rel="stylesheet" href="./css/Search.css" />
     <link rel="stylesheet" href="./css/matual.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/film.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,29 +15,54 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-      <header class="header">
-          <div class="header_positioning_container">
-          <img src="../src/images/logo.png" alt="logotype" class="logo" />
-          <ul class="nav_menu">
-        <h3 class="nav_menu_element">Home</h3>
-        <h3 class="nav_menu_element">Charts</h3>
-        <h3 class="nav_menu_element">Search</h3>
-        <h3 class="nav_menu_element">My list</h3>
-
-          </ul>
-          <img src="../src/images/user_logo.png" alt="user icon" class="user_icon">
-        </div>
-      </header>
+  <body class="body">
+    <header class="header">
+      <div class="header_positioning_container">
+        <img src="./images/logo.png" alt="logotype" class="logo" />
+        <ul class="menu">
+          <li class="menu_item selected"><a href="#" class="menu_item_link">Home</a></li>
+          <li class="menu_item"><a href="#" class="menu_item_link">Search</a></li>
+          <li class="menu_item"><a href="#" class="menu_item_link">My List</a></li>
+          <li class="menu_item"><a href="#" class="menu_item_link">About Us</a></li>
+        </ul>
+        <img src="./images/user_logo.png" alt="user icon" class="user_icon" />
+      </div>
+    </header>
 
       <div class="search-box">
-        <input id="search" placeholder="Search..." type="text" class="search-input">
-        <input id="year" type="num" value="2021" name="" id="">
+        <input class="input" id="search" placeholder="Search..." type="text" class="search-input">
+        <input class="input" id="year" type="num" value="2021" name="" id="">
         <div id="sort-by-box">
-          <p>Sort by </p>
+          <p class="p">Sort by </p>
+                <ul class="dropping-list">
+                  <li id="droping-list-year" class="droping-list-element"><button class="droping-list-but">Year</button></li>
+                  <li id="droping-list-rating" class="droping-list-element"><button class="droping-list-but">Rating</button></li>
+                  <li id="droping-list-length" class="droping-list-element"><button class="droping-list-but">Length</button></li>
+                </ul>
+          
         </div>
+        <img id="search-img" class="search-img" src="./images/search.png" alt="">
         </div>
+
       </div>
+
+      
+      <div class="film-container">
+        <h2 style="display: none;" id="resoults-heading" class="category-name">Resoults</h2>
+
+        <ul id="resoults" class="film-category" ></ul>
+        <h2 class="category-name">New films</h2>
+
+        <ul id="new_films" class="film-category"></ul>
+        <h2 class="category-name">Top rated</h2>
+
+        <ul id="top_rated" class="film-category" ></ul>
+      </div>
+
+      
     
+
+
+      <script type="module" src="./js/Search.js"></script>
   </body>
 </html>
