@@ -12,6 +12,15 @@ function renderCurrent(films_list, deploy_place) {
   const localHtml = film_template(films_list);
   localRoot.insertAdjacentHTML('afterbegin', localHtml);
 }
+function changeNullPosterWay(results){
+  for (let i = 0; i < results.length; i++){
+    if (results[i].poster_path == null){
+      results[i].poster_path = "/tzve3LD534wsCnhOrSqgJ1mnRma.jpg"
+    }
+  }
+  console.log(results)
+  return results
+}
 
 const getGenres = async () => {
   const genres = await fetch(`${URL}/genre/movie/list?api_key=${API_KEY}`).then(res => res.json());
@@ -47,7 +56,7 @@ const filterCurrentGenres = async (current_option, current_index, query) => {
   
 const names_list = [document.querySelector('.now_playing_list'), document.querySelector('#top_rated'), document.querySelector('.popular_list'), document.querySelector('.upcomming_list'), document.querySelector('#new_films'), document.querySelector('#resoults')]
   if(result.length > 0){
-    renderCurrent(result, names_list[current_index]);
+    renderCurrent(changeNullPosterWay(result), names_list[current_index]);
     not_found_img.style = "display: none;"
   }
   else{
@@ -82,7 +91,7 @@ const names_list = [document.querySelector('.now_playing_list'), document.queryS
   
 
   const search = async (query) => {
-    const res = await fetch(`${URL}/search/multi?api_key=${API_KEY}&query=${query}`).then(res => 
+    const res = await fetch(`${URL}/search/movie?api_key=${API_KEY}&query=${query}`).then(res => 
       res.json()
     );
     console.log(res)
