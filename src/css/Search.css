@@ -79,6 +79,15 @@
 .search-img{
   margin-left: 5vw;
 }
+#error-404-div{
+  display: flex;
+  align-items: center;
+}
+
+#e-404-img{
+  width: 40vw;
+  margin-left: 20vw;
+}
 /* ---------------------------------Droping list start--------------------------------------------- */
 
 

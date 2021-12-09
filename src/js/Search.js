@@ -1,13 +1,16 @@
 import film_template from '../templates/film.hbs';
 
+
 const API_KEY = '170b9b9397b0574b7d603cba918ea1f4';
 const URL = 'https://api.themoviedb.org/3';
+const not_found_img = document.getElementById('e-404-img')
 
 
 function renderCurrent(films_list, deploy_place) {
   const localRoot = deploy_place;
+  localRoot.innerHTML = ""
   const localHtml = film_template(films_list);
-  localRoot.insertAdjacentHTML('beforeend', localHtml);
+  localRoot.insertAdjacentHTML('afterbegin', localHtml);
 }
 
 const getGenres = async () => {
@@ -41,10 +44,21 @@ const filterCurrentGenres = async (current_option, current_index, query) => {
 
   // console.log('result : ', result);
 
+  
 const names_list = [document.querySelector('.now_playing_list'), document.querySelector('#top_rated'), document.querySelector('.popular_list'), document.querySelector('.upcomming_list'), document.querySelector('#new_films'), document.querySelector('#resoults')]
-  renderCurrent(result, names_list[current_index]);
+  if(result.length > 0){
+    renderCurrent(result, names_list[current_index]);
+    not_found_img.style = "display: none;"
+  }
+  else{
+    let localRoot = document.getElementById("resoults");
+    localRoot.innerHTML = ""
+    not_found_img.style = "display: block;"
+  }
   return 
 };
+
+ 
 
   const getNowPlaying = async () => {
     const nowPlaying = await fetch(`${URL}/movie/now_playing?api_key=${API_KEY}`).then(res => 
@@ -65,6 +79,7 @@ const names_list = [document.querySelector('.now_playing_list'), document.queryS
 
   // ------------------------------Теперь именно функции поиска---------------
 
+  
 
   const search = async (query) => {
     const res = await fetch(`${URL}/search/multi?api_key=${API_KEY}&query=${query}`).then(res => 
@@ -78,6 +93,8 @@ const names_list = [document.querySelector('.now_playing_list'), document.queryS
     let query = document.getElementById('search')
     query = query.value
     resoultsDiv.style = "display: block;"
+
+    
     filterCurrentGenres(search, 5, query)
   }
 
