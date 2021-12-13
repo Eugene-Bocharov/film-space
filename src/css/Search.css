@@ -69,11 +69,21 @@
 }
 
 .category-name{
-  font-size: 3em;
-  margin-top: 5vh;
   font-family: 'Exo 2', sans-serif;
-  font-style: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
- 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.25em;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 95px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
 }
 
 .search-img{
