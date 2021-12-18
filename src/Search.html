@@ -17,21 +17,29 @@
   </head>
   <body class="body">
     <header class="header">
+      <div class="dimmer dimmer_active"></div>
+      <button type="button" class="burger burger__open button-menu-img_open" id="">
+        <img src="#" alt="Open nav menu" />
+      </button>
       <div class="header_positioning_container">
         <img src="./images/logo.png" alt="logotype" class="logo" />
-        <ul class="menu">
-          <li class="menu_item selected"><a href="#" class="menu_item_link">Home</a></li>
-          <li class="menu_item"><a href="#" class="menu_item_link">Search</a></li>
-          <li class="menu_item"><a href="#" class="menu_item_link">My List</a></li>
-          <li class="menu_item"><a href="#" class="menu_item_link">About Us</a></li>
+        <ul class="menu menu_open">
+          <li class="menu_item selected menu-item_open">
+            <a href="#" class="menu_item_link">Home</a>
+          </li>
+          <li class="menu_item menu-item_open"><a href="#" class="menu_item_link">Search</a></li>
+          <li class="menu_item menu-item_open">
+            <a href="#" class="menu_item_link">My List</a>
+          </li>
+          <li class="menu_item menu-item_open"><a href="#" class="menu_item_link">About Us</a></li>
         </ul>
-        <img src="./images/user_logo.png" alt="user icon" class="user_icon" />
+        <img src="#" alt="user icon" class="user_icon" />
       </div>
     </header>
 
       <div class="search-box">
         <input class="input" id="search" placeholder="Search..." type="text" class="search-input">
-        <input class="input" id="year" type="num" value="2021" name="" id="">
+        <!-- <input class="input" id="year" type="num" value="2021" name="" id="">
         <div id="sort-by-box">
           <p class="p">Sort by </p>
                 <ul class="dropping-list">
@@ -40,7 +48,7 @@
                   <li id="droping-list-length" class="droping-list-element"><button class="droping-list-but">Length</button></li>
                 </ul>
           
-        </div>
+        </div> -->
         <img id="search-img" class="search-img" src="./images/search.png" alt="">
         </div>
 
@@ -65,6 +73,7 @@
 
 
       <script type="module" src="./js/Search.js"></script>
+      <script type="module" src="./js/nowbar.js"></script>
 
 
   </body>
